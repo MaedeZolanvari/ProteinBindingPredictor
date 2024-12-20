@@ -10,8 +10,25 @@
 - **Minimum**: ~0.000000928  
 - **Maximum**: ~868,000,000
 - 
-## Analysis of the `kiba_score` Column
 
+## Handling Missing Values
+
+To tackle this challenge the first step was to look and analyze the dataset:
+- Rows with empty values in the columns `pubchecm_cid`, `kiba_score`, and `kiba_score_estimated` (with the latter two being correlated).
+
+#### Steps Taken:
+1. **Empty `pubchecm_cid` Values**:
+   - Rows without a `pubchecm_cid` do not carry any meaningful context, therefore, these rows were removed from the dataset.
+
+2. **Empty `kiba_score` Values**:
+   - For rows with missing `kiba_score`, I considered two potential approaches:
+     - **Option 1**: Remove these rows entirely.
+     - **Option 2**: Train a regression model on the dataset (excluding these rows) to estimate and impute the missing values, adding them back to the training set.
+   - **Current Approach**: I started by removing rows with missing `kiba_score`.
+
+
+
+## Analysis of the `kiba_score` Column
 In a regression problem to calculate the `kiba_score`, this column is a critical, but it exhibits significant skewness. Below is a summary of the steps taken to address this issue:
 
 ### Key Observations
