@@ -13,6 +13,7 @@
 
 ## Data Cleansing
 (a cleaned_data.csv file was created to use in the rest of the challenge)
+
 To tackle this challenge the first step was to look and analyze the dataset:
 - Rows with empty values in the columns `pubchecm_cid`, `kiba_score`, and `kiba_score_estimated` (with the latter two being correlated).
 
