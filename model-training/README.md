@@ -1,4 +1,4 @@
-> First I wanted to apolagize for presenting such poor models. I basically do not have any model, they are merely a representation of how the models could have been developed.
+> **⚠️ Disclaimer: First, I want to apologize for presenting such poor models. I basically do not have actual models; they are merely a representation of how the models could have been developed.**
 
 # Training Methodology and Challenges
 
