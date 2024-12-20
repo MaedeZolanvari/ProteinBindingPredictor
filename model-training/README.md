@@ -2,6 +2,8 @@
 
 # Training Methodology and Challenges
 
+📌 All the inference codes are under the [inference](inference) folder!
+
 For each regression and classification tasks, I developed two methods of training: One with concatenation and one with attention mechanism and incorporating the column `kiba_score_estimated`:
 
 ## Attention Mechanism
