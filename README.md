@@ -24,6 +24,7 @@ Each folder includes a `README.md` explaining the steps and decisions taken. Sta
 3. Train for way more epochs!
 5. Use proper embedings for the chemicals and work with SMILES not random embeddings!
 6. Definitely utilize an extrenal database to mitigate the problem of extreme skewness of the kiba scores for a well trained regression model.
+7. Make the code in different files less redundant by creating a util file and calling in functions.
 
 
 
