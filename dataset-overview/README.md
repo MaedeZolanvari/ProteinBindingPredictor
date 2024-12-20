@@ -46,5 +46,10 @@ In a regression problem to calculate the `kiba_score`, this column is a critical
 - **Deleting High Values**: I thought about removing rows with `kiba_score > 5` but it wouldn't be a good idea. These extreme values represent real-world cases and should not be ignored.
 - **What I would do next:**:
   - **Oversampling**: Oversampling data points with extremely high `kiba_score` could help balance the distribution.
-  - **External Data**: Supplementing the dataset with additional samples in the high `kiba_score` range from external databases could enhance the model’s ability to generalize.
+  - **External Data**: Supplementing the dataset with additional samples in the high `kiba_score` range from external databases could enhance the model’s ability to generalize. I explored a bit and found the following repository, which I believe contains relevant data for this task:
+
+- [DeepDTA KIBA Dataset](https://github.com/hkmztrk/DeepDTA/tree/master/data/kiba)
+
+However, due to time constraints, I couldn't try it.
+
 
