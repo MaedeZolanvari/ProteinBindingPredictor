@@ -12,6 +12,8 @@
 - 
 
 ## Data Cleansing
+Related file: [clean_dataset.ipynb](clean_dataset.ipynb)
+
 (a cleaned_data.csv file was created to use in the rest of the challenge)
 
 To tackle this challenge the first step was to look and analyze the dataset:
@@ -30,7 +32,7 @@ To tackle this challenge the first step was to look and analyze the dataset:
 
 
 ## Analysis of the `kiba_score` Column
-Related file: [kiba_score_distribution.ipynb](dataset-overview/kiba_score_distribution.ipynb)
+Related file: [kiba_score_distribution.ipynb](kiba_score_distribution.ipynb)
 
 In a regression problem to calculate the `kiba_score`, this column is a critical, but it exhibits significant skewness. Below is a summary of the steps taken to address this issue:
 
