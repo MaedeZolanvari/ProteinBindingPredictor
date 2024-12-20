@@ -13,15 +13,6 @@ For each regression and classification tasks, I developed two methods of trainin
 To integrate the `kiba_score_estimated` column into the training process:
 - I modified the loss function to assign higher weights to data points where `kiba_score_estimated` is `False`. I did this to ensures that more reliable data points are given greater importance during training.
 
-# Specifications regarding the regression task:
-
-> In this task, we are trying to estimate `kiba_score`, related files: [deep_learning.ipynb](deep_learning.ipynb) and [deep_learning-attention.ipynb](deep_learning-attention.ipynb)
-
-- I initially trained a **RandomForestRegressor** model. However, due to the dataset's size, training was prohibitively slow.
-- To improve efficiency, I transitioned to deep learning models and leveraged **GPU acceleration** for faster training.
-- I implemented **gradient clipping** to stabilize training and prevent exploding gradients.
-- Since the `kiba_score` is exteremly skewed, and the model uses **ReLU activations**, I employed **He Initialization** (`kaiming_uniform_`) for better weight initialization.
-- In some cases, the loss did not change across epochs. This was likely due to poor weight initialization, which can result in uniform or stuck gradients, preventing effective learning.
 
 # Specifications regarding the classification task:
 
@@ -31,6 +22,17 @@ To integrate the `kiba_score_estimated` column into the training process:
 - I created a new column called `binding`, where its value was 0 for the synthetic negative samples and 1 for the positive bindings (the data in the original dataset 'Deloitte_DrugDiscovery_dataset.csv')
 - The model exhibited significant bias towards labeling data as **No Binding**. Further investigation is needed.
 
+
+
+# Specifications regarding the regression task:
+
+> In this task, we are trying to estimate `kiba_score`, related files: [deep_learning.ipynb](deep_learning.ipynb) and [deep_learning-attention.ipynb](deep_learning-attention.ipynb)
+
+- I initially trained a **RandomForestRegressor** model. However, due to the dataset's size, training was prohibitively slow.
+- To improve efficiency, I transitioned to deep learning models and leveraged **GPU acceleration** for faster training.
+- I implemented **gradient clipping** to stabilize training and prevent exploding gradients.
+- Since the `kiba_score` is exteremly skewed, and the model uses **ReLU activations**, I employed **He Initialization** (`kaiming_uniform_`) for better weight initialization.
+- In some cases, the loss did not change across epochs. This was likely due to poor weight initialization, which can result in uniform or stuck gradients, preventing effective learning.
 
 
 
