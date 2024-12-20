@@ -1,12 +1,12 @@
 
-# Adding Extra Features to the Dataset
-
-## Overview
-Related file: [save_embeddings.ipynb](save_embeddings.ipynb)
+# Adding Extra Features (embeddings) to the Dataset
 
 To train a proper model, I explored adding extra features to the dataset by incorporating embeddings for both proteins and chemicals.
 
 ### Protein and Chemical Embeddings
+
+Related file: [save_embeddings.ipynb](save_embeddings.ipynb)
+
 1. **Proteins**:
    - I used [HuggingFace's **ESM model**](https://huggingface.co/docs/transformers/en/model_doc/esm) to calculate embeddings for the proteins. 
 
