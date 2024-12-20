@@ -4,18 +4,18 @@ This repository contains the steps and methodologies used to predict binding and
 
 
 1. **[Dataset Overview](dataset-overview/README.md)**:  
-   Explore the dataset, including insights and preprocessing steps.
+   Exploring the dataset, including insights and preprocessing steps.
 
 2. **[Synthetic Negative Samples](synthetic-negative-samples/README.md)**:  
-   Learn how synthetic negative samples were created to balance the dataset.
+   How synthetic negative samples were created to balance the dataset.
 
 3. **[Adding Extra Features](create-extra-features/README.md)**:  
-   Understand the feature engineering process, including embeddings and chemical structure integration.
+   Presenting the feature engineering process, including embeddings and chemical structure integration.
 
 4. **[Model Training](model-training/README.md)**:  
-   Dive into the model training process, challenges, and key decisions made.
+   Related to the model training process, challenges, and key decisions made.
 
-Each folder includes a detailed `README.md` explaining the steps and decisions taken. Start with [Dataset Overview](dataset-overview/README.md) and proceed sequentially for clarity.
+Each folder includes a `README.md` explaining the steps and decisions taken. Start with [Dataset Overview](dataset-overview/README.md) and proceed sequentially for clarity.
 
 ## What would I have done if I had more time:
 
