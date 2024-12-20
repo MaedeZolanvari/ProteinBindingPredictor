@@ -6,7 +6,7 @@ To train a proper model, I explored adding extra features to the dataset by inco
 
 ### Protein and Chemical Embeddings
 1. **Proteins**:
-   - I used HuggingFace's **ESM model** to calculate embeddings for the proteins. 
+   - I used [HuggingFace's **ESM model**] (https://huggingface.co/docs/transformers/en/model_doc/esm) to calculate embeddings for the proteins. 
 
 2. **Chemicals**:
    - To generate embeddings for chemicals, I needed molecular structures or **SMILES** representations of the `UniProt_ID`.
