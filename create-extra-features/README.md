@@ -3,6 +3,7 @@
 
 ## Overview
 Related file: [save_embeddings.ipynb](save_embeddings.ipynb)
+
 To train a proper model, I explored adding extra features to the dataset by incorporating embeddings for both proteins and chemicals.
 
 ### Protein and Chemical Embeddings
