@@ -11,8 +11,8 @@
 - **Maximum**: ~868,000,000
 - 
 
-## Handling Missing Values
-
+## Data Cleansing
+(a cleaned_data.csv file was created to use in the rest of the challenge)
 To tackle this challenge the first step was to look and analyze the dataset:
 - Rows with empty values in the columns `pubchecm_cid`, `kiba_score`, and `kiba_score_estimated` (with the latter two being correlated).
 
@@ -24,7 +24,7 @@ To tackle this challenge the first step was to look and analyze the dataset:
    - For rows with missing `kiba_score`, I considered two potential approaches:
      - **Option 1**: Remove these rows entirely.
      - **Option 2**: Train a regression model on the dataset (excluding these rows) to estimate and impute the missing values, adding them back to the training set.
-   - **Current Approach**: I started by removing rows with missing `kiba_score`.
+   - **Current Approach**: I started by removing rows with missing `kiba_score` and also made sure there is no nageative or zero values in this column.
 
 
 
