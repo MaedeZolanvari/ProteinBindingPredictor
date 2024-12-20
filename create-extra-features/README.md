@@ -5,7 +5,9 @@ To train a proper model, I explored adding extra features to the dataset by inco
 
 ### Protein and Chemical Embeddings
 
-Related file: [save_embeddings.ipynb](save_embeddings.ipynb)
+Related file: [save_embeddings.ipynb](save_embeddings.ipynb
+
+> (I simply concatenated these embeddings, but later during training, I used attention mechanism in hope to get better features)
 
 1. **Proteins**:
    - I used [HuggingFace's **ESM model**](https://huggingface.co/docs/transformers/en/model_doc/esm) to calculate embeddings for the proteins. 
