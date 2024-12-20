@@ -16,7 +16,7 @@ To integrate the `kiba_score_estimated` column into the training process:
 
 # Specifications regarding the classification task:
 
-> In this task, we are trying to predict `binding`, related files: [classification.ipynb](classification.ipynb) and [classification-attention.ipynb](classification-attention.ipynb) and [random_forest_regressor.ipynb](random_forest_regressor.ipynb)
+> In this task, we are trying to predict `binding`, related files: [classification.ipynb](classification.ipynb) and [classification-attention.ipynb](classification-attention.ipynb) 
 
 - I incorporated the synthetic negative samples to create a robust dataset for distinguishing between binding and non-binding pairs.
 - I created a new column called `binding`, where its value was 0 for the synthetic negative samples and 1 for the positive bindings (the data in the original dataset 'Deloitte_DrugDiscovery_dataset.csv')
@@ -26,7 +26,7 @@ To integrate the `kiba_score_estimated` column into the training process:
 
 # Specifications regarding the regression task:
 
-> In this task, we are trying to estimate `kiba_score`, related files: [deep_learning.ipynb](deep_learning.ipynb) and [deep_learning-attention.ipynb](deep_learning-attention.ipynb)
+> In this task, we are trying to estimate `kiba_score`, related files: [deep_learning.ipynb](deep_learning.ipynb) and [deep_learning-attention.ipynb](deep_learning-attention.ipynb) and [random_forest_regressor.ipynb](random_forest_regressor.ipynb)
 
 - I initially trained a **RandomForestRegressor** model. However, due to the dataset's size, training was prohibitively slow.
 - To improve efficiency, I transitioned to deep learning models and leveraged **GPU acceleration** for faster training.
